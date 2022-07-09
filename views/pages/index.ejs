@@ -1,0 +1,33 @@
+<%- include('../partials/header'); %>
+
+    <div class="container">
+      <form>
+            <div id="mensajes" class="mensajes">
+              <%- include('./mensaje'); %>
+            </div>  
+            <hr>
+            <h1 class="text-left">Whatsapp <i class="bi bi-whatsapp"></i></h1>
+            <hr>
+            <div class="mb-3">
+                <label for="numero-wap" class="form-label"><i class="bi bi-whatsapp"></i> | Numero de Wap</label>
+                <input type="text" class="form-control" name="numero_wap" id="numero-wap" value="+14155238886" aria-describedby="numerolHelp" disabled>
+                <div id="numerolHelp" class="form-text">Este es el numero de wap del cual se envian los mensajes</div>
+            </div>
+            <!-- datos de la app telefono -->
+            <div class="mb-3">
+              <label for="numero" class="form-label"><i class="bi bi-telephone-forward"></i> | Numero destino</label>
+              <!-- <input type="number" class="form-control" name="numero" id="numero" aria-describedby="numerolHelp"> -->
+              <select class="form-select form-select-lg mb-3" name="numero" id="numero" aria-describedby="numerolHelp" aria-label=".form-select-lg example">
+                <option value="3205936059">+57 3205936059</option>
+              </select>
+              <div id="numerolHelp" class="form-text">A este numero se enviara el mensaje via wasap</div>
+            </div>
+            <div class="mb-3">
+              <label for="mensaje" class="form-label"><i class="bi bi-chat-right-dots"></i> | Mensaje</label>
+              <textarea class="form-control" name="mensaje" id="mensaje" placeholder="Genere el mensaje para enviar"></textarea>
+            </div>
+            <button type="submit" id="btn-enviar" class="btn btn-primary"><i class="bi bi-send"></i> Enviar mensaje</button>
+          </form>
+    </div>
+
+<%- include('../partials/footer'); %>

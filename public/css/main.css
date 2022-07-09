@@ -1,0 +1,16 @@
+body{
+    background-color: black;
+    color: white;
+}
+
+form{
+    padding: 50px;
+}
+.mensajes{
+    padding: 20px;
+}
+.contenedor-msm{
+    background-color: rgb(31, 153, 116);
+    padding: 10px;
+    border-radius: 5px;
+}
