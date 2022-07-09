@@ -78,7 +78,7 @@ app.get('/', (req, res) => {
   //sms
   // client.messages 
   // .create({ 
-  //   body: 'Me vas a negrear con el Bot en el wasap que gonorrea de buena',  
+  //   body: 'Me',  
   //   messagingServiceSid: 'MG_',      
   //   to: '+57'
   // })
