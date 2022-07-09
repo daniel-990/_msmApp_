@@ -54,13 +54,13 @@ app.get('/tomarmensajes', (req, res) => {
   //------
   /**
   * body: 'Listo', 
-    from: 'whatsapp:+14155238886',       
-    to: 'whatsapp:+573127867526' 
+    from: 'whatsapp:+14',       
+    to: 'whatsapp:+57' 
   */
   client.messages.list({limit: 100})
   .then(messages => messages.forEach(
     m = (m) =>{
-      if(m.from == "whatsapp:+573205936059"){
+      if(m.from == "whatsapp:+57"){
         res.json({
           from: m.from,
           to: m.to,
@@ -79,8 +79,8 @@ app.get('/', (req, res) => {
   // client.messages 
   // .create({ 
   //   body: 'Me vas a negrear con el Bot en el wasap que gonorrea de buena',  
-  //   messagingServiceSid: 'MG6f5e646aeeec6f692625e4f51e78a037',      
-  //   to: '+573015789522'
+  //   messagingServiceSid: 'MG_',      
+  //   to: '+57'
   // })
   // .then(message => console.log(message.sid)) 
   // .done();
